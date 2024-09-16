@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f3ebe4;
+}
+.container {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.image .desk {
+  width: 300px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.product {
+  width: 300px;
+  height: 451px;
+  background-color: white;
+  padding: 35px;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.product .per {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 5px;
+  color: #acabab;
+  font-weight: bold;
+}
+.product h1 {
+  width: 200px;
+  line-height: 0.9;
+  color: #1a1919;
+  margin: 25px 0;
+}
+.product p {
+  width: 219px;
+  color: #808080;
+  margin: 0 0 25px 0;
+  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.product .price {
+  font-size: xx-large;
+  font-weight: bold;
+  color: #398864;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.product .old-price {
+  color: #808080;
+  text-decoration-line: line-through;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  position: absolute;
+  bottom: 107px;
+  right: 70px;
+}
+.product .add-card {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #398864;
+  color: white;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  padding: 13px;
+  border-radius: 7px;
+}
+.product .add-card:active {
+  background-color: #1f4d37;
+}
+.product .add-card i {
+  padding-right: 10px;
+}
+
+/* Start Media Query */
+@media (min-width: 768px) {
+  .mob {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    display: block;
+  }
+  .image .desk {
+    display: none;
+  }
+  .mob {
+    width: 320px;
+    height: 250px;
+    margin-bottom: -3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .product {
+    width: 320px;
+    height: 375px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+  }
+  .product h1 {
+    width: fit-content;
+    margin-top: 15px;
+  }
+  .product p {
+    width: fit-content;
+    margin-top: -10px;
+  }
+  .product .old-price {
+    bottom: 96px;
+    right: 100px;
+  }
+}
+/* End Media Query */
